@@ -14,12 +14,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="search-bar">
-        <!--<input type="search" name="search" id="search" placeholder="Search" class="search-input">-->
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for images..">
-
-        </div>
-    </div>
+        <input type="search" name="search" id="search" placeholder="Search" class="search-input">
+ 
     <div class="gallery">
         
         <a href="images/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
@@ -58,12 +54,15 @@
         <a href="images/12.jpg" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
             <img src="images/thumbnails/12.jpg" alt="bluebells" class="photo">
         </a>
-        ...
     </div>
-    <script>window.addEventListener('load', function() {
-        baguetteBox.run('.gallery');
-      });
-      </script>
+</div>
+
+
+<script>
+    window.addEventListener('load', function() {
+      baguetteBox.run('.gallery');
+    });
+    </script>
         
     <script src="js/searchFilter.js"></script>
     <script src="js/baguetteBox.min.js"></script>
